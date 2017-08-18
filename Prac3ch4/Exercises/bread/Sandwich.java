@@ -1,3 +1,5 @@
+package bread;
+
 public class Sandwich
 {
 	Bread bread;

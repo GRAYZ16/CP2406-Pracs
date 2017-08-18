@@ -1,3 +1,5 @@
+package bread;
+
 public class SandwichFilling
 {
 	private String fillingType;

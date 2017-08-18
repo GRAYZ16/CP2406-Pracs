@@ -1,3 +1,5 @@
+package bread;
+
 public class Bread
 {
 	public static final String MOTTO = "The Staff of Life";

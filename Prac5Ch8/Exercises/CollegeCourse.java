@@ -8,6 +8,13 @@ public class CollegeCourse
     private String letterGrade;
 
 
+    public CollegeCourse()
+	{
+		this.courseID = "SubID";
+		this.creditHours = 3;
+		this.letterGrade = "z";
+	}
+
     public CollegeCourse(String courseID, int creditHours, String letterGrade)
     {
         this.courseID = courseID;

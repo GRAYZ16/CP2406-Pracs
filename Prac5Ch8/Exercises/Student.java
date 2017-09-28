@@ -3,15 +3,16 @@
  */
 public class Student
 {
+    private static int COURSES = 5;
     private int idNumber;
-    private CollegeCourse[] courses = new CollegeCourse[5];
+    private CollegeCourse[] courses = new CollegeCourse[COURSES];
 
     public Student()
     {
-        //TESTING
-        for(CollegeCourse course : courses)
+    	//Init CollegeCourse Objects
+        for(int i = 0; i < COURSES; i++)
         {
-            course = new CollegeCourse("Sub", 1, "Z");
+            courses[i] = new CollegeCourse();
         }
     }
 

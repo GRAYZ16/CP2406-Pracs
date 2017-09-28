@@ -9,15 +9,14 @@ public class InputGrades
     {
         Student[] students = new Student[10];
         boolean running = true;
-        int i = 1;
         String grades = "ABCDF";
 
-        //TESTING
-        for(Student student : students)
-        {
-            student = new Student();
-            student.setIdNumber(i++);
-        }
+        //Init Student Objects
+        for(int i = 0; i < 10; i++)
+		{
+			students[i] = new Student();
+			students[i].setIdNumber(i+1);
+		}
 
         Scanner scanner = new Scanner(System.in);
 
@@ -32,11 +31,10 @@ public class InputGrades
             System.out.print("Input Grade #");
             String grade = scanner.nextLine();
 
+
             if(grades.contains(grade))
             {
-                Student student = students[id];
-                CollegeCourse course = student.getCourse(courseID);
-                course.setLetterGrade(grade);
+            	students[id-1].getCourse(courseID-1).setLetterGrade(grade);
             }
             else
                 System.out.println("Invalid Grade");

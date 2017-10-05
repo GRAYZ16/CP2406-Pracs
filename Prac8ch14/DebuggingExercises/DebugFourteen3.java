@@ -19,6 +19,7 @@ public class DebugFourteen3 extends JFrame implements ItemListener
       setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
       setLayout(flow);
       pizzaBox.addItemListener(this);
+      add(aLabel);
       add(toppingList);
       pizzaBox.addItem("cheese");
       pizzaBox.addItem("sausage");
@@ -28,7 +29,7 @@ public class DebugFourteen3 extends JFrame implements ItemListener
       pizzaBox.addItem("green olive");
       pizzaBox.addItem("black olive");
       add(pizzaBox);
-      add(aLabel);
+      add(totPrice);
    }
    public static void main(String[] arguments)
    {
